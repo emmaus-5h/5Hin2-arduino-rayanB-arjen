@@ -176,7 +176,64 @@ void loop() {
   // lees sensorwaarden
   knop7 = digitalRead(pin7Knop);
   knop8 = digitalRead(pin8Knop);
+  /* PSEUDOCODE 
+  Als toestand == een {
+  ALS tijd > 5 sec {
+      Toestand = twee
+   }
+}
 
+Als toestand == twee {
+  ALS tijd > 1 sec {
+      Toestand = drie
+   }
+}
+
+Als toestand == drie {
+  ALS tijd > 5 sec {
+      Toestand = vier
+   }
+  ALS knopIngedrukt  && tijd < 5 sec{
+      Toestand = zeven
+   }
+}
+
+Als toestand == vier {
+  ALS tijd > 1 sec {
+      Toestand = vijf
+   }
+}
+
+Als toestand == vijf {
+  ALS tijd > 5 sec {
+      Toestand = zes
+   }
+}
+
+Als toestand == zes {
+  ALS tijd > 1 sec {
+      Toestand = een
+   }
+}
+
+Als toestand == zeven {
+  ALS tijd > 1 sec {
+      Toestand = acht
+   }
+}
+
+Als toestand == acht {
+  ALS tijd > 5 sec {
+      Toestand = negen
+   }
+}
+
+Als toestand == negen {
+  ALS tijd > 1 sec {
+      Toestand = vijf
+   }
+}
+*/
   // bepaal toestand
   if (toestand == BORING) {
     if (millis() - toestandStartTijd > 1000) {
@@ -208,6 +265,106 @@ void loop() {
     }
   }
 
+   /* PSEUDO CODE
+     if (toestand == een) {
+    digitalWrite(1, ROOD1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digital 
+    digitalWrite(5, GROEN5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, GROEN7);
+    digitalWrite(8, GROEN8);
+  }
+
+  if (toestand == twee) {
+    digitalWrite(1, ROOD1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digitalWrite(4, ORANJE4);
+    digitalWrite(5, ORANJE5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, KNIPPER7);
+    digitalWrite(8, KNIPPER8);
+  }
+
+  if (toestand == drie) {
+    digitalWrite(1, GROEN1);
+    digitalWrite(2, GROEN2);
+    digitalWrite(3, GROEN3);
+    digitalWrite(4, ROOD4);
+    digitalWrite(5, ROOD5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, ROOD7);
+    digitalWrite(8, ROOD8);
+  }
+
+  if (toestand == vier) {
+    digitalWrite(1, GROEN1);
+    digitalWrite(2, ORANJE2);
+    digitalWrite(3, ORANJE3);
+    digitalWrite(4, ROOD4);
+    digitalWrite(5, ROOD5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, ROOD7);
+    digitalWrite(8, ROOD8);
+  }
+
+  if (toestand == vijf) {
+    digitalWrite(1, GROEN1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digitalWrite(4, ROOD4);
+    digitalWrite(5, GROEN5);
+    digitalWrite(6, GROEN6);
+    digitalWrite(7, ROOD7);
+    digitalWrite(8, ROOD8);
+  }
+
+  if (toestand == zes) {
+    digitalWrite(1, ORANJE1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digitalWrite(4, ROOD4);
+    digitalWrite(5, GROEN5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, ROOD7);
+    digitalWrite(8, ROOD8);
+  }
+
+  if (toestand == zeven) {
+    digitalWrite(1, ORANJE1);
+    digitalWrite(2, ORANJE2);
+    digitalWrite(3, ORANJE3);
+    digitalWrite(4, ROOD4);
+    digitalWrite(5, ROOD5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, GROEN7);
+    digitalWrite(8, GROEN8);
+  }
+
+  if (toestand == acht) {
+    digitalWrite(1, ROOD1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digitalWrite(4, GROEN4);
+    digitalWrite(5, GROEN5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, GROEN7);
+    digitalWrite(8, GROEN8);
+  }
+
+  if (toestand == negen) {
+    digitalWrite(1, ROOD1);
+    digitalWrite(2, ROOD2);
+    digitalWrite(3, ROOD3);
+    digitalWrite(4, ORANJE4);
+    digitalWrite(5, GROEN5);
+    digitalWrite(6, ROOD6);
+    digitalWrite(7, KNIPPER7);
+    digitalWrite(8, KNIPPER8);
+  }
+   */
   // zet stoplichten conform toestand
   if (toestand == BORING) {
     for (int i = 1; i <= 8; i = i + 1) {
