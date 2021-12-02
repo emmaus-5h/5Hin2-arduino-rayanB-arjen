@@ -435,12 +435,116 @@ Als toestand == negen {
   }
    */
   // zet stoplichten conform toestand
-  if (toestand == BORING) {
-    for (int i = 1; i <= 8; i = i + 1) {
-      stoplicht(i, ROOD);
+  if (toestand == een) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ROOD);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, GROEN);
+      stoplicht(e, GROEN);
+      stoplicht(f, ROOD);
+      stoplicht(g, GROEN);
+      stoplicht(h, GROEN);
     }
   }
-  if (toestand == KAMIKAZE) {
+  if (toestand == twee) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ROOD);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, ORANJE);
+      stoplicht(e, ORANJE);
+      stoplicht(f, ROOD);
+      stoplicht(g, GROEN);
+      stoplicht(h, GROEN);
+    }
+  }
+  if (toestand == drie) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, GROEN);
+      stoplicht(b, GROEN);
+      stoplicht(c, GROEN);
+      stoplicht(d, ROOD);
+      stoplicht(e, ROOD);
+      stoplicht(f, ROOD);
+      stoplicht(g, ROOD);
+      stoplicht(h, ROOD);
+    }
+  }
+  if (toestand == vier) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, GROEN);
+      stoplicht(b, ORANJE);
+      stoplicht(c, ORANJE);
+      stoplicht(d, ROOD);
+      stoplicht(e, ROOD);
+      stoplicht(f, ROOD);
+      stoplicht(g, ROOD);
+      stoplicht(h, ROOD);
+    }
+  }
+  if (toestand == vijf) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, GROEN);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, ROOD);
+      stoplicht(e, GROEN);
+      stoplicht(f, GROEN);
+      stoplicht(g, ROOD);
+      stoplicht(h, ROOD);
+    }
+  }
+  if (toestand == zes) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ORANJE);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, ROOD);
+      stoplicht(e, GROEN);
+      stoplicht(f, ROOD);
+      stoplicht(g, ROOD);
+      stoplicht(h, ROOD);
+    }
+  }
+  if (toestand == zeven) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ORANJE);
+      stoplicht(b, ORANJE);
+      stoplicht(c, ORANJE);
+      stoplicht(d, ROOD);
+      stoplicht(e, ROOD);
+      stoplicht(f, ROOD);
+      stoplicht(g, ROOD);
+      stoplicht(h, ROOD);
+    }
+  }
+  if (toestand == acht) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ROOD);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, GROEN);
+      stoplicht(e, GROEN);
+      stoplicht(f, ROOD);
+      stoplicht(g, GROEN);
+      stoplicht(h, GROEN);
+    }
+  }
+  if (toestand == negen) {
+    for (int a = 1; int b = 2; int c = 3; int d = 4; int e = 5; int f = 6; int g = 7; int h = 8; ) {
+      stoplicht(a, ROOD);
+      stoplicht(b, ROOD);
+      stoplicht(c, ROOD);
+      stoplicht(d, ORANJE);
+      stoplicht(e, GROEN);
+      stoplicht(f, ROOD);
+      stoplicht(g, GROEN);
+      stoplicht(h, GROEN);
+    }
+  }
+   /*
+  if (toestand == KAMIKAZE ) {
     for (int i = 1; i <= 8; i = i + 1) {
       stoplicht(i, GROEN);
     }
@@ -450,7 +554,7 @@ Als toestand == negen {
       stoplicht(i, ORANJE);
     }
   }
-
+  */
   // vertraging om te zorgen dat berichten op de seriele monitor leesbaar blijven
   delay(100);
 }
